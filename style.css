@@ -7,11 +7,44 @@
 body{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(35deg, blue, red, green);
+    background: linear-gradient(90deg, blue, rgb(255, 0, 166), rgb(2, 0, 128));
     font-size: 4vw;
     display: flex;
+    animation: bg 2s linear infinite;
+    background-size: 200%;
+}
+@keyframes bg {
+    to{
+        background-position: 200%;
+    }
 }
 h1{
     margin: auto;
     color: white;
+    animation: www 5s infinite;
+    animation-timing-function: linear;
+}
+span:first-child{
+    color: blue;
+}
+span:nth-child(2){
+    color: red;
+}
+span:nth-child(3){
+    color: blue;
+}
+span:nth-child(4){
+    color: red;
+}
+span:nth-child(5){
+    color: blue;
+}
+span:nth-child(6){
+    color: red;
+}
+
+@keyframes www {
+    to{
+        transform: rotate(360deg);
+    }
 }
